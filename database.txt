@@ -34,11 +34,11 @@ insert into users values('edwmakris','makris@gmail.com','6998765432',Makris,'Giw
 
 insert into users values('alexalex','alex@gmail.com','6923456789',Chrys,'Alex');
 
-insert into users_vehicle values('edwmakris','mini couper s','aaa 1111');
+insert into Vehicle_Database values('edwmakris','mini couper s','aaa 1111');
 
-insert into users_vehicle values('alexalex','audi r8','cba 9876');
+insert into Vehicle_Database values('alexalex','audi r8','cba 9876');
 
-insert into users_vehicle values('monopanagis','aston martin valkayry','aek 1924');
+insert into Vehicle_Database values('monopanagis','aston martin valkayry','aek 1924');
 
-insert into users_vehicle values('monopanagis','ferrari laferarri','pao 1023');
+insert into Vehicle_Database values('monopanagis','ferrari laferarri','pao 1023');
 
