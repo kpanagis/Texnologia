@@ -1,3 +1,21 @@
+
+import random
+import datetime
+   
+
+username = []
+phonenumber = []
+add = []
+checkin = []
+checkout = []
+spot = []
+price = []
+sn = []
+p = []
+spotnumber = []
+userid = []
+day = []
+   
 def date(c):
       
     if c[2] >= 2021 and c[2] <= 2022:
@@ -22,23 +40,19 @@ def date(c):
                     select_parking_spot()
               
               
-            # if month is odd & less than equal 
-            # to 7th  month 
+         
             elif c[1] <= 7 and c[1]%2 != 0 and c[0] <= 31:
                 pass
               
-            # if month is even & less than equal to 7th
-            # month and not 2nd month
+      
             elif c[1] <= 7 and c[1]%2 == 0 and c[0] <= 30 and c[1] != 2:
                 pass
               
-            # if month is even & greater than equal 
-            # to 8th  month
+        
             elif c[1] >= 8 and c[1]%2 == 0 and c[0] <= 31:
                 pass
               
-            # if month is odd & greater than equal
-            # to 8th  month
+         
             elif c[1]>=8 and c[1]%2!=0 and c[0]<=30:  
                 pass
               
@@ -70,11 +84,10 @@ def date(c):
         select_parking_spot()
    
    
-# Booking fucntion 
+
 def select_parking_spot():
       
-        # used global keyword to 
-        # use global variable 'i'
+        
         global i
         print(" Select Parking Spot")
         print(" ")
@@ -85,7 +98,6 @@ def select_parking_spot():
             a = str(input("Address: "))
                         
               
-            # checks if any field is not empty
             if n!="" and p1!="" and a!="":
                 name.append(n)
                 add.append(a)
@@ -111,8 +123,7 @@ def select_parking_spot():
         co[1]=int(co[1])
         co[2]=int(co[2])
           
-        # checks if check-out date falls after 
-        # check-in date
+       
         if co[1]<ci[1] and co[2]<ci[2]:
               
             print("\n\tEeeeee mpine..!!\n\tCheck-Out date must fall after Check-In\n")
@@ -146,8 +157,7 @@ def select_parking_spot():
           
         ch=int(input("->"))
           
-        # if-conditions to display alloted room
-        # type and it's price
+       
         if ch==0:
             print(" 1. Standard Spot - Rs 2$")
             print(" 2. Premium Spot - Rs 5$")
@@ -167,19 +177,17 @@ def select_parking_spot():
             print(" Wrong choice..!!")
    
   
-        # randomly generating room no. and customer 
-        # id for customer
+        
         sn = random.randrange(40)+300
         uid = random.randrange(40)+10
           
           
-        # checks if alloted room no. & customer 
-        # id already not alloted
-        while sn in spotno or cid in userid:
+
+        while sn in spotno or uid in userid:
             sn = random.randrange(60)+300
             uid = random.randrange(60)+10
               
-        rc.append(0)
+        sn.append(0)
         p.append(0)
                 
         if p1 not in phno:
