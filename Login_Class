@@ -8,12 +8,12 @@ Password = "Skrrr"
 loop = 'true'
 while (loop == 'true'):
 
-    username = raw_input("Please enter your username: ")
+    username = raw_input("Username: ")
 
     if (username == Username):
         loop1 = 'true'
         while (loop1 == 'true'):
-            password = getpass.getpass("Please enter your password: ")
+            password = getpass.getpass("Password: ")
             if (password == Password):
                 print "Logged in successfully as " + username
 		print "Welcome to SPS"
