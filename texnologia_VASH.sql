@@ -46,6 +46,7 @@ CREATE TABLE `users` (
   `User Phone Number` int(10) NOT NULL,
   `Users History` varchar(255) NOT NULL,
   `Users Class` varchar(255) NOT NULL
+  `Users card_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
