@@ -45,8 +45,8 @@ CREATE TABLE `users` (
   `User Password` varchar(255) NOT NULL,
   `User Phone Number` int(10) NOT NULL,
   `Users History` varchar(255) NOT NULL,
-  `Users Class` varchar(255) NOT NULL
-  `Users card_id` varchar(255) NOT NULL
+  `Users_Class` varchar(255) NOT NULL
+  `card_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
