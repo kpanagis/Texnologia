@@ -12,12 +12,12 @@ def Signup():
     print("Please Provide")
     name = str(input("Name: "))
     password = str(input("Password: "))
-    f = open("User_Database.txt",'r')
+    f = open("users.txt",'r')
     info = f.read()
     if name in info:
         return "Name Unavailable. Please Try Again"
     f.close()
-    f = open("User_Database.txt",'w')
+    f = open("users.sql",'w')
     info = info + " " +name + " " + password
     f.write(info)
 
@@ -25,7 +25,7 @@ def Login():
     print("Please Provide")
     name = str(input("Name: "))
     password = str(input("Password: "))
-    f = open("User_Database.txt",'r')
+    f = open("users.txt",'r')
     info = f.read()
     info = info.split()
     if name in info:
